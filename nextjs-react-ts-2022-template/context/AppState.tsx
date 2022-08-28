@@ -3,7 +3,7 @@ import Context from './Context';
 import { CommonReusableProps } from '../types/common.type';
 
 const AppState: React.FC<CommonReusableProps> = ({ children }) => {
-    const stateValues = "sample data";
+    const stateValues = { data: 'sample data' };
 
     return <Context.Provider value={stateValues}>{children}</Context.Provider>;
 };

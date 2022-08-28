@@ -1,9 +1,9 @@
-@use 'utility' as *; 
+@forward './abstracts/'; 
+@use './abstracts/' as *; 
 
 :root {
     font-size: $def-font-size;
     font-family: $primary-font;
-    color: white;
 }
 
 *{
